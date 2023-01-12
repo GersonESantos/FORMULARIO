@@ -1,3 +1,12 @@
+<?php
+   if(isset($_POST['submit']))
+   {
+    print_r($_POST['nome']);
+    print_r($_POST['email']);
+    print_r($_POST['telefone']);
+   }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +43,7 @@
         .inputBox{
             position: relative;
         }
+        
         /*.inputUser:focus .labelInput{
          top: -20px;
          font-size: 12px;
@@ -56,11 +66,38 @@
             pointer-events: none;
             transition: .5s;
         }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput {
+            top: -20px;
+            font-size: 12px;
+            color: dodgerblue;
+        }
+        #data_nascimento{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+       #submit{
+        background-image: linear-gradient(to right,rgb(0, 97, 197), rgb(90, 20, 220));
+        width: 100%;
+        border: none;
+        padding: 15px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 10%;
+       }
+        
+    #submit:hover{
+        background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+     }
     </style>
 </head>
 <body>
     <div class="box">
-        <form action="">
+        <form action="formulario.php" method="post">
             <fieldset>
                 <legend><b>Clientes</b></legend>
                 <br>
@@ -78,19 +115,18 @@
                     <input type="tel" name="telefone" id="telefone" class="inputUser" required>
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div>
-                <br><br>
                 <p>Sexo</p>
                 <input type="radio" id="feminino" name="genero" value="feminino" required>
                 <label for="feminino">Feminino</label>
+                <br>
                 <input type="radio" id="masculino" name="genero" value="masculino" required>
                 <label for="masculino">Masculino</label>
+                <br>
                 <input type="radio" id="outro" name="genero" value="outro" required>
                 <label for="outro">Outro</label>
                 <br><br>
-                <div class="inputBox">
-                    <label for="data_nascimento"><b>Data de Nascimento</b></label>
-                    <input type="date" name="data_nascimento" id="data_nascimento" class="inputUser" required>              
-                </div>
+                <label for="data_nascimento"><b>Data de Nascimento</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>              
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="cidade" id="cidade" class="inputUser" required>
