@@ -25,7 +25,7 @@
             text-decoration: none;
             color: white;
             border: 2px solid dodgerblue;
-            border-radius: 15px;
+            border-radius: 10px;
             padding: 10px;
         }
         a:hover{background-color: dodgerblue;}
@@ -35,7 +35,7 @@
     <h1>Inscreva-se</h1>
     <h2>GersonES</h2>
     <div class="box">
-        <a href="">Login</a>
+        <a href="login.php">Login</a>
         <a href="formulario.php">Cadastre</a>
     </div>
     
