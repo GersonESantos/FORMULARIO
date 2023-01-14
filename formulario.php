@@ -31,7 +31,7 @@
     VALUES('$nome','$senha',$email','$telefone','$genero','$data_nascimento','$cidade','$estado','$endereco')");
     header('Location: login.php');
    }
-   rint_r('Nome :' . $_POST['nome']);
+   print_r('Nome :' . $_POST['nome']);
    print_r('<br>');
    print_r('Senha :' . $_POST['senha']);
    print_r('<br>');
