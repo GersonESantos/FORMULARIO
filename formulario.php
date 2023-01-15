@@ -16,7 +16,7 @@
     print_r('Estado :' . $_POST['estado']);print_r('<br>');
     print_r('Endereco :' . $_POST['endereco']);print_r('<br>'); 
     
-    include_once('config.php');
+    <!--include_once('config.php');
     $nome = $_POST['nome'];
     $senha = $_POST['senha'];
     $email = $_POST['email'];
@@ -38,14 +38,14 @@
    print_r('Email :' . $_POST['email']);
 
 ?>
-
+--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientes</title>
+    <title>Usuarios</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -128,18 +128,18 @@
     </style>
 </head>
 <body>
-    <a href="home.php">Voltar</a>
+    <!--<a href="home.php">Voltar</a>-->
     <div class="box">
         <form action="formulario.php" method="POST">
             <fieldset>
-                <legend><b>Clientes</b></legend>
+                <legend><b>Usuarios</b></legend>
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
                     <label for="none" class="labelInput">Nome Completo</label>
                 <br>
                 <div class="inputBox">
-                    <input type="password" name="senha" id="senha" class="inputUser" required>
+                    <input type="password" name="password" id="senha" class="inputUser" required>
                     <label for="senha" class="labelInput">Senha</label>
                 </div>
                 <br><br>
