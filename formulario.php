@@ -16,25 +16,25 @@
     print_r('Estado :' . $_POST['estado']);print_r('<br>');
     print_r('Endereco :' . $_POST['endereco']);print_r('<br>'); 
     
-    <!--include_once('config.php');
+    include_once('config.php');
     $nome = $_POST['nome'];
     $senha = $_POST['senha'];
     $email = $_POST['email'];
     $telefone = $_POST['telefone'];
-    $genero = $_POST['sexo'];
+    $sexo = $_POST['sexo'];
     $data_nascimento = $_POST['data_nascimento'];
     $cidade = $_POST['cidade'];
     $estado = $_POST['estado'];
     $endereco = $_POST['endereco'];
     
-    $result = mysqli_query($conexao, "INSERT INTO usuarios(id,nome,senha,email,telefone,sexo,data_nasc,cidade,estado,endereco) 
-    VALUES(default,'$nome','$senha',$email','$telefone','$sexo','$data_nascimento','$cidade','$estado','$endereco')");
-   // header('Location: login.php');
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,senha,email,telefone,sexo,data_nasc,cidade,estado,endereco) 
+    VALUES('$nome','$senha','$email','$telefone','$sexo','$data_nascimento','$cidade','$estado','$endereco')");
+    header('Location: login.php');
    }
    
 
 ?>
---->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -123,12 +123,10 @@
      }
     </style>
 </head>
-<body>
-<<<<<<< HEAD
-    <!--<a href="home.php">Voltar</a>-->
-=======
+<body
+
+
    <!-- <a href="home.php">Voltar</a>-->
->>>>>>> 8255aea99d998129e234c815aee72ea729e92a3a
     <div class="box">
         <form action="formulario.php" method="POST">
             <fieldset>
@@ -140,12 +138,12 @@
                 </div>   
                 <br><br>
                 <div class="inputBox">
-                    <input type="password" name="password" id="senha" class="inputUser" required>
+                    <input type="password" name="senha" id="senha" class="inputUser" required>
                     <label for="senha" class="labelInput">Senha</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <input type="email" name="email" id="email" class="inputUser" required>
                     <label for="email" class="labelInput">Email</label>
                 </div>
                 <br><br>
@@ -163,7 +161,7 @@
                 <input type="radio" id="outro" name="sexo" value="outro" required>
                 <label for="outro">Outro</label>
                 <br><br>
-                <label for="data_nascimento"><b>Data de Nascimento</b></label>
+                <label for="data_nascimento">Data de Nascimento</label>
                 <input type="date" name="data_nascimento" id="data_nascimento" required>              
                 <br><br>
                 <div class="inputBox">
