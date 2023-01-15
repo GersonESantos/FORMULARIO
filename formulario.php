@@ -123,10 +123,8 @@
      }
     </style>
 </head>
-<body
-
-
-   <!-- <a href="home.php">Voltar</a>-->
+<body>
+    <a href="home.php">Voltar</a>
     <div class="box">
         <form action="formulario.php" method="POST">
             <fieldset>
