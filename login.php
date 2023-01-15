@@ -48,12 +48,12 @@
     <div>
         <h1>Login</h1>
         <form action="testLogin.php" method="POST">
-        <input type="email" name="email" placeholder="Email">
-        <br><br>
-        <input type="password" name="senha" placeholder="Senha">
-        <br><br>
-        <input class="inputSubmit" type="submit" name="submit" value="Enviar">
-        <!--<  <button>Enviar</button>">--->
+            <input type="email" name="email" placeholder="Email">
+            <br><br>
+            <input type="password" name="senha" placeholder="Senha">
+            <br><br>
+            <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+            <!--<  <button>Enviar</button>">--->
         </form>
     </div>
 </body>
