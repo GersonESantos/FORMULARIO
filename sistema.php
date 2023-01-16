@@ -72,7 +72,7 @@
   </thead>
   <tbody>
     <?php
-      while($user_data = mysqli_fetch_assc($result))
+      while($user_data = mysqli_fetch_assoc($result))
       {
         echo "<tr>";
         echo "<td>".$user_data['id']."</td>";
