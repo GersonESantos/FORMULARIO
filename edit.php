@@ -17,19 +17,25 @@
             $email = $user_data['email'];
             $telefone = $user_data['telefone'];
             $sexo = $user_data['sexo'];
-            $data_nascimento = $user_data['data_nasc'];
+            $data_nasc = $user_data['data_nasc'];
             $cidade = $user_data['cidade'];
             $estado = $user_data['estado'];
             $endereco = $user_data['endereco'];   
         } 
         print_r($nome);
+        print_r($data_nasc);
+        
+        print_r($result);
    }
    else
    {
     header('Location: sistema.php');
    }   
    } 
-
+   else
+   {
+    header('Location: sistema.php'); 
+   }
 ?>
 
 <!DOCTYPE html>
@@ -104,7 +110,7 @@
             outline: none;
             font-size: 15px;
         }
-       #submit{
+       #update{
         background-image: linear-gradient(to right,rgb(0, 97, 197), rgb(90, 20, 220));
         width: 100%;
         border: none;
@@ -115,13 +121,13 @@
         border-radius: 10%;
        }
         
-    #submit:hover{
+    #update:hover{
         background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
      }
     </style>
 </head>
 <body>
-    <a href="sistema.php">Voltar</a>
+    <a href="saveEdit.php">Voltar</a>
     <div class="box">
         <form action="saveEdit.php" method="POST">
             <fieldset>
@@ -157,7 +163,7 @@
                 <label for="outro">Outro</label>
                 <br><br>
                 <label for="data_nascimento">Data de Nascimento</label>
-                <input type="date" name="data_nascimento" id="data_nascimento"  value="<?php echo $data_nascimento ?>" required>              
+                <input type="date" name="data_nascimento" id="data_nascimento"  value="<?php echo $data_nasc ?>" required>              
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="cidade" id="cidade" class="inputUser"  value="<?php echo $cidade ?>" required>
@@ -174,6 +180,7 @@
                     <label for="endereco" class="labelInput">Endereço</label>
                 </div>
                 <br><br>
+                <input type="hidden" name="id" value="<?php echo $id ?>">
                 <input type="submit" name="update" id="update">
             </fieldset>
         </form>

@@ -11,7 +11,7 @@
     $logado = $_SESSION['email'];
     $sql = "SELECT * FROM usuarios ORDER BY id DESC";
     $result = $conexao->query($sql);
-    print_r($_result);
+    print_r($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +62,7 @@
       <th scope="col">Email</th>
       <th scope="col">Telefone</th>
       <th scope="col">Sexo</th>
-      <th scope="col">Data de Nascimento</th>
+      <th scope="col">Data de Nasc</th>
       <th scope="col">Cidade</th>
       <th scope="col">Estado</th>
       <th scope="col">Endereco</th>
