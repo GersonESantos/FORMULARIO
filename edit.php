@@ -123,7 +123,7 @@
 <body>
     <a href="sistema.php">Voltar</a>
     <div class="box">
-        <form action="formulario.php" method="POST">
+        <form action="saveEdit.php" method="POST">
             <fieldset>
                 <legend><b>Usuarios</b></legend>
                 <br>
