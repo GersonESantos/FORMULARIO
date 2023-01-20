@@ -113,7 +113,7 @@ include_once('config.php');
     </style>
 </head>
 <body>
-    <a href="sistema.php">Voltar</a>
+    <a href="home.php">Voltar</a>
     <div class="box">
         <form action="saveEdit.php" method="POST">
             <fieldset>
