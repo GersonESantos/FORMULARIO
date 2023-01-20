@@ -35,10 +35,10 @@
     <h1>Inscreva-se</h1>
     <h2>GersonES</h2>
     <div class="box">
-        <a href="login.php">Login</a>
-        <a href="formulario.php">Cadastre-se</a>
-        <a href="usuarios.php">Usuarios</a>
-        <a href="pro.php">Produtos</a>
+        <a href="login.php">Logar</a>
+        <a href="formulario.php">Cadastrar Usuarios</a>
+        <a href="sistema.php">Alterar Usuarios</a>
+        <a href="pro.php">Cadastrar Produtos</a>
     </div>
 </body>
 </html>
