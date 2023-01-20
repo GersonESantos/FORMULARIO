@@ -45,7 +45,7 @@
     <a href="home.php">Voltar</a>
     <div>
         <h1>Login</h1>
-        <form action="home.php" method="POST">
+        <form action="testLogin.php" method="POST">
             <input type="email" name="email" placeholder="Email">
             <br><br>
             <input type="password" name="senha" placeholder="Senha">
