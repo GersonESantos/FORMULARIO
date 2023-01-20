@@ -17,9 +17,7 @@
         // print_r('Estado: ' . $_POST['estado']);
         // print_r('<br>');
         // print_r('Endereço: ' . $_POST['endereco']);
-
         include_once('config.php');
-
         $nome = $_POST['nome'];
         $email = $_POST['email'];
         $senha = $_POST['senha'];
@@ -127,7 +125,7 @@
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="labelInput">Nome completo</label>
+                    <label for="nome" class="labelInput">Nome Completo</label>
                 </div>
                 <br>
                 <div class="inputBox">
@@ -136,7 +134,7 @@
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <input type="email" name="email" id="email" class="inputUser" required>
                     <label for="email" class="labelInput">Email</label>
                 </div>
                 <br><br>
@@ -144,17 +142,17 @@
                     <input type="tel" name="telefone" id="telefone" class="inputUser" required>
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div>
-                <p>Sexo:</p>
-                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <p>Sexo</p>
+                <input type="radio" id="feminino" name="sexo" value="feminino" required>
                 <label for="feminino">Feminino</label>
                 <br>
-                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <input type="radio" id="masculino" name="sexo" value="masculino" required>
                 <label for="masculino">Masculino</label>
                 <br>
-                <input type="radio" id="outro" name="genero" value="outro" required>
+                <input type="radio" id="outro" name="sexo" value="outro" required>
                 <label for="outro">Outro</label>
                 <br><br>
-                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <label for="data_nascimento"><b>Data de Nascimento</b><label>
                 <input type="date" name="data_nascimento" id="data_nascimento" required>
                 <br><br><br>
                 <div class="inputBox">

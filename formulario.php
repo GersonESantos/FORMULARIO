@@ -1,25 +1,25 @@
 <?php
    if(isset($_POST['submit']))
    {
-    print_r('Nome :' . $_POST['nome']);
-    print_r('<br>');
-    print_r('Senha :' . $_POST['senha']);
-    print_r('<br>');
-    print_r('Email :' . $_POST['email']);
-    print_r('<br>');
-    print_r('Telefone :' . $_POST['telefone']);
-    print_r('<br>');
-    print_r('Sexo :' . $_POST['sexo']);
-    print_r('<br>');
-    print_r('Data de Nascimento :' . $_POST['data_nascimento']);print_r('<br>');
-    print_r('Cidade :' . $_POST['cidade']);print_r('<br>');
-    print_r('Estado :' . $_POST['estado']);print_r('<br>');
-    print_r('Endereco :' . $_POST['endereco']);print_r('<br>'); 
+    // print_r('Nome: ' . $_POST['nome']);
+    // print_r('<br>');
+    // print_r('Senha: ' . $_POST['senha']);
+    // print_r('<br>');
+    // print_r('Email :' . $_POST['email']);
+    // print_r('<br>');
+    // print_r('Telefone :' . $_POST['telefone']);
+    // print_r('<br>');
+    // print_r('Sexo :' . $_POST['sexo']);
+    // print_r('<br>');
+    // print_r('Data de Nascimento :' . $_POST['data_nascimento']);print_r('<br>');
+    // print_r('Cidade :' . $_POST['cidade']);print_r('<br>');
+    // print_r('Estado :' . $_POST['estado']);print_r('<br>');
+    // print_r('Endereco :' . $_POST['endereco']);print_r('<br>'); 
     
     include_once('config.php');
     $nome = $_POST['nome'];
-    $senha = $_POST['senha'];
     $email = $_POST['email'];
+    $senha = $_POST['senha'];
     $telefone = $_POST['telefone'];
     $sexo = $_POST['sexo'];
     $data_nascimento = $_POST['data_nascimento'];
@@ -48,15 +48,15 @@
             background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
         }
         .box{
+            color: white;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.5);
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.6);
             padding: 15px;
             border-radius: 15px;
-            width: 23%;
-            color: white;
+            width: 20%;
         }
         fieldset{
             border: 3px solid dodgerblue;
@@ -71,12 +71,6 @@
         .inputBox{
             position: relative;
         }
-        
-        /*.inputUser:focus .labelInput{
-         top: -20px;
-         font-size: 12px;
-         color: dodgerblue;
-        }*/
         .inputUser{
             background: none;
             border: none;
@@ -95,7 +89,7 @@
             transition: .5s;
         }
         .inputUser:focus ~ .labelInput,
-        .inputUser:valid ~ .labelInput {
+        .inputUser:valid ~ .labelInput{
             top: -20px;
             font-size: 12px;
             color: dodgerblue;
@@ -108,16 +102,15 @@
             font-size: 15px;
         }
        #submit{
-        background-image: linear-gradient(to right,rgb(0, 97, 197), rgb(90, 20, 220));
+        background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
         width: 100%;
         border: none;
         padding: 15px;
         color: white;
         font-size: 15px;
         cursor: pointer;
-        border-radius: 10%;
-       }
-        
+        border-radius: 10px;
+       }       
     #submit:hover{
         background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
      }
@@ -132,9 +125,9 @@
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="none" class="labelInput">Nome Completo</label>
+                    <label for="nome" class="labelInput">Nome Completo</label>
                 </div>   
-                <br><br>
+                <br>
                 <div class="inputBox">
                     <input type="password" name="senha" id="senha" class="inputUser" required>
                     <label for="senha" class="labelInput">Senha</label>
@@ -159,9 +152,9 @@
                 <input type="radio" id="outro" name="sexo" value="outro" required>
                 <label for="outro">Outro</label>
                 <br><br>
-                <label for="data_nascimento">Data de Nascimento</label>
+                <label for="data_nascimento"><b>Data de Nascimento</b><label>
                 <input type="date" name="data_nascimento" id="data_nascimento" required>              
-                <br><br>
+                <br><br><br>
                 <div class="inputBox">
                     <input type="text" name="cidade" id="cidade" class="inputUser" required>
                     <label for="cidade" class="labelInput">Cidade</label>
