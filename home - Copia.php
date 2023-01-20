@@ -28,9 +28,7 @@
             border-radius: 10px;
             padding: 10px;
         }
-        a:hover{
-            background-color: dodgerblue;
-        }
+        a:hover{background-color: dodgerblue;}
     </style>
 </head>
 <body>

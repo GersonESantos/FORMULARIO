@@ -16,15 +16,15 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%,-50%);
             background-color: rgba(0, 0, 0, 0.6);
             padding: 30px;
-            border-radius: 15px;
+            border-radius: 10px;
         }
         a{
             text-decoration: none;
             color: white;
-            border: 2px solid dodgerblue;
+            border: 3px solid dodgerblue;
             border-radius: 10px;
             padding: 10px;
         }
@@ -36,9 +36,8 @@
     <h2>GersonES</h2>
     <div class="box">
         <a href="login.php">Login</a>
-        <a href="formulario.php">Cadastre</a>
+        <a href="formulario.php">Cadastre-se</a>
         <a href="sistema.php">Sistema</a>
     </div>
-    
 </body>
 </html>
