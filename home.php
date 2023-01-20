@@ -37,7 +37,8 @@
     <div class="box">
         <a href="login.php">Login</a>
         <a href="formulario.php">Cadastre-se</a>
-        <a href="sistema.php">Sistema</a>
+        <a href="usuarios.php">Usuarios</a>
+        <a href="pro.php">Produtos</a>
     </div>
 </body>
 </html>
