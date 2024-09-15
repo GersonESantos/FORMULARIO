@@ -16,6 +16,7 @@
     // print_r('Estado :' . $_POST['estado']);print_r('<br>');
     // print_r('Endereco :' . $_POST['endereco']);print_r('<br>'); 
     
+    
     include_once('config.php');
     $nome = $_POST['nome'];
     $email = $_POST['email'];
